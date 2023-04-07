@@ -1,0 +1,73 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --gray-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+
+  --max-width: 300px;
+
+  font-family: "Outfit", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+}
+img,
+svg {
+  display: block;
+  width: 100%;
+}
+
+.main-content {
+  display: grid;
+  place-items: center;
+  flex-grow: 1;
+}
+.card {
+  background-color: var(--white);
+  border-radius: 1.2rem;
+}
+
+.QR-component__layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0.9rem;
+  padding-bottom: 2.4rem;
+  max-width: var(--max-width);
+}
+.QR-component__img-wrapper {
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.QR-component__content {
+  text-align: center;
+  color: var(--gray-blue);
+  font-size: 15px;
+  font-weight: 400;
+  padding-inline: 0.5rem;
+}
+.QR-component__content h1 {
+  color: var(--dark-blue);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
